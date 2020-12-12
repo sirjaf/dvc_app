@@ -8,11 +8,14 @@ import 'package:data_connection_checker/data_connection_checker.dart';
 void main() async {
   var status;
   status = await checkkInternetConnection();
-  if (status) {
-    runApp(MyApp());
-  } else {
-    runApp(Offline(title: 'You are Offline'));
-  }
+//   if (status) {
+//     runApp(MyHomePage(
+//         title: 'Dawaki Viewing Center', appBarColor: Colors.green[500]));
+//     //runApp(MyApp());
+//   } else {
+//     runApp(Offline(title: 'You are Offline'));
+//   }
+  runApp(Offline(title: 'You are Offline', mstatus: status));
 }
 
 Future<bool> checkkInternetConnection() async {

@@ -26,12 +26,6 @@ class Stat extends StatefulWidget {
 
 class _StatState extends State<Stat> with AutomaticKeepAliveClientMixin<Stat> {
   final TableLeague myTable = new TableLeague();
-
-  // Future _epl;
-  // Future _laliga;
-  // Future _bundesliga;
-  // Future _seriea;
-  // Future _ligue1;
   Future _table;
 
   List<bool> _selections = [
@@ -69,6 +63,7 @@ class _StatState extends State<Stat> with AutomaticKeepAliveClientMixin<Stat> {
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: ToggleButtons(
+                    fillColor: Colors.green[100],
                     constraints: BoxConstraints(
                       minHeight: 40,
                       minWidth: cWidth / 5,
@@ -236,12 +231,6 @@ class _StatState extends State<Stat> with AutomaticKeepAliveClientMixin<Stat> {
               snapshot.data[i].position,
               style: TextStyle(fontSize: 12, fontWeight: FontWeight.normal),
             ))),
-        // DataCell(Center(
-        //     child: FadeInImage.assetNetwork(
-        //   placeholder: 'images/placeholder.png',
-        //   bundle: DefaultAssetBundle.of(context),
-        //   image: snapshot.data[i].crestUrl.toString(),
-        // ))),
         DataCell(Center(
           child: SvgPicture.network(
             snapshot.data[i].crestUrl.toString(),

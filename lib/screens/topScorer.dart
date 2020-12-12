@@ -26,13 +26,6 @@ class _TopScorerUIState extends State<TopScorerUI>
     with AutomaticKeepAliveClientMixin<TopScorerUI> {
   final TopScorer myTable = new TopScorer();
 
-  // String _table = 'https://carwash.jaafarprojects.website/json/tsepl.json';
-  // String _epl = 'https://carwash.jaafarprojects.website/json/tsepl.json';
-  // String _laliga = 'https://carwash.jaafarprojects.website/json/tslaliga.json';
-  // String _bundesliga = 'https://carwash.jaafarprojects.website/json/tsbundesliga.json';
-  // String _seriea = 'https://carwash.jaafarprojects.website/json/tsseriea.json';
-  // String _ligue1 = 'https://carwash.jaafarprojects.website/json/tsligue1.json';
-
   List<bool> _selections = [true, false, false, false, false];
 
   //List.generate(5, (_)=>false);
@@ -64,6 +57,7 @@ class _TopScorerUIState extends State<TopScorerUI>
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: ToggleButtons(
+                    fillColor: Colors.green[100],
                     constraints: BoxConstraints(
                       minHeight: 40,
                       minWidth: cWidth / 5,

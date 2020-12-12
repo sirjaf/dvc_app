@@ -4,14 +4,22 @@ import 'package:flutter/material.dart';
 
 class Offline extends StatefulWidget {
   final String title;
-  Offline({Key key, this.title}) : super(key: key);
+  final bool mstatus;
+  Offline({Key key, this.title, this.mstatus}) : super(key: key);
 
   @override
   _OfflineState createState() => _OfflineState();
 }
 
 class _OfflineState extends State<Offline> {
-  bool status = true;
+  bool status;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    status = widget.mstatus;
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
