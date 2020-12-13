@@ -27,7 +27,7 @@ class _OfflineState extends State<Offline> {
       title: 'Dawaki Viewing Center',
       theme: ThemeData(primaryColor: Colors.green[500]),
       home: SafeArea(
-          child: status
+          child: !status
               ? offLineBody()
               : MyHomePage(
                   title: 'Dawaki Viewing Center',
@@ -75,10 +75,10 @@ class _OfflineState extends State<Offline> {
               ),
               RaisedButton(
                 onPressed: () async {
-                  bool mstatus = false;
-                  mstatus = await checkkInternetConnection();
+                  bool nstatus;
+                  nstatus = await checkkInternetConnection();
                   setState(() {
-                    status = !mstatus;
+                    status = nstatus;
                   });
                 },
                 child: Text("Retry",

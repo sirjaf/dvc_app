@@ -52,7 +52,7 @@ class _FixtureCardState extends State<FixtureCard> {
                         widget.teamA,
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                            fontSize: 14, fontWeight: FontWeight.bold),
+                            fontSize: 12, fontWeight: FontWeight.w600),
                       ),
                     ],
                   ),
@@ -79,7 +79,7 @@ class _FixtureCardState extends State<FixtureCard> {
                         widget.time,
                         style: TextStyle(
                             fontSize: 14,
-                            fontWeight: FontWeight.normal,
+                            fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
                       if (widget.date != null)
@@ -108,7 +108,7 @@ class _FixtureCardState extends State<FixtureCard> {
                         widget.teamB,
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                            fontSize: 14, fontWeight: FontWeight.bold),
+                            fontSize: 12, fontWeight: FontWeight.w600),
                       ),
                     ],
                   ),
