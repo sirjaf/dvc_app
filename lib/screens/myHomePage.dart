@@ -23,7 +23,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final TopScorer _myTopScorer = new TopScorer();
   Fixture _myFixture = new Fixture();
 
-  static String baseURL = 'http://carwash.jaafarprojects.website';
+  static String baseURL = 'https://carwash.jaafarprojects.website';
 
   final String _todayFixUrl = '$baseURL/api/fixtures/today';
   final String _upcomingFixUrl = '$baseURL/api/fixtures/upcoming/';
