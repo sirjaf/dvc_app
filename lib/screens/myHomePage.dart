@@ -25,18 +25,18 @@ class _MyHomePageState extends State<MyHomePage> {
 
   static String baseURL = 'http://carwash.jaafarprojects.website';
 
-  final String _todayFixUrl = baseURL + '/api/fixtures/today';
-  final String _upcomingFixUrl = baseURL + '/api/fixtures/upcoming/';
-  final String _eplUrl = baseURL + '/json/epl.json';
-  final String _laligaUrl = baseURL + '/json/laliga.json';
-  final String _bundesligaUrl = baseURL + 'json/bundesliga.json';
-  final String _serieaUrl = baseURL + '/json/seriea.json';
-  final String _ligue1Url = baseURL + '/json/ligue1.json';
-  final String _tseplUrl = baseURL + '/json/tsepl.json';
-  final String _tslaligaUrl = baseURL + '/json/tslaliga.json';
-  final String _tsbundesligaUrl = baseURL + '/json/tsbundesliga.json';
-  final String _tsserieaUrl = baseURL + '/json/tsseriea.json';
-  final String _tsligue1Url = baseURL + '/json/tsligue1.json';
+  final String _todayFixUrl = '$baseURL/api/fixtures/today';
+  final String _upcomingFixUrl = '$baseURL/api/fixtures/upcoming/';
+  final String _eplUrl = '$baseURL/json/epl.json';
+  final String _laligaUrl = '$baseURL/json/laliga.json';
+  final String _bundesligaUrl = '$baseURL/json/bundesliga.json';
+  final String _serieaUrl = '$baseURL/json/seriea.json';
+  final String _ligue1Url = '$baseURL/json/ligue1.json';
+  final String _tseplUrl = '$baseURL/json/tsepl.json';
+  final String _tslaligaUrl = '$baseURL/json/tslaliga.json';
+  final String _tsbundesligaUrl = '$baseURL/json/tsbundesliga.json';
+  final String _tsserieaUrl = '$baseURL/json/tsseriea.json';
+  final String _tsligue1Url = '$baseURL/json/tsligue1.json';
 
   Future _todayFix;
   Future _upComingFix;
