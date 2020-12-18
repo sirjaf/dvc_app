@@ -23,30 +23,21 @@ class _MyHomePageState extends State<MyHomePage> {
   final TopScorer _myTopScorer = new TopScorer();
   Fixture _myFixture = new Fixture();
 
-  var _todayFixUrl =
-      'https://carwash.jaafarprojects.website/api/fixtures/today';
-  //'jsonfiles/today.json';
-  //'https://carwash.jaafarprojects.website/api/fixtures/today'; //'jsonfiles/today.json';
-  var _upcomingFixUrl =
-      'https://carwash.jaafarprojects.website/api/fixtures/upcoming/';
-  var _eplUrl = 'https://carwash.jaafarprojects.website/json/epl.json';
-  var _laligaUrl = 'https://carwash.jaafarprojects.website/json/laliga.json';
-  var _bundesligaUrl =
-      'https://carwash.jaafarprojects.website/json/bundesliga.json';
-  var _serieaUrl = 'https://carwash.jaafarprojects.website/json/seriea.json';
-  var _ligue1Url = 'https://carwash.jaafarprojects.website/json/ligue1.json';
+  static String baseURL = 'http://carwash.jaafarprojects.website';
 
-  var _tseplUrl = 'https://carwash.jaafarprojects.website/json/tsepl.json';
-  var _tslaligaUrl =
-      'https://carwash.jaafarprojects.website/json/tslaliga.json';
-  var _tsbundesligaUrl =
-      'https://carwash.jaafarprojects.website/json/tsbundesliga.json';
-  var _tsserieaUrl =
-      'https://carwash.jaafarprojects.website/json/tsseriea.json';
-  var _tsligue1Url =
-      'https://carwash.jaafarprojects.website/json/tsligue1.json';
-  //'jsonfiles/upcoming.json';
-  //'jsonfiles/upcoming.json';
+  final String _todayFixUrl = baseURL + '/api/fixtures/today';
+  final String _upcomingFixUrl = baseURL + '/api/fixtures/upcoming/';
+  final String _eplUrl = baseURL + '/json/epl.json';
+  final String _laligaUrl = baseURL + '/json/laliga.json';
+  final String _bundesligaUrl = baseURL + 'json/bundesliga.json';
+  final String _serieaUrl = baseURL + '/json/seriea.json';
+  final String _ligue1Url = baseURL + '/json/ligue1.json';
+  final String _tseplUrl = baseURL + '/json/tsepl.json';
+  final String _tslaligaUrl = baseURL + '/json/tslaliga.json';
+  final String _tsbundesligaUrl = baseURL + '/json/tsbundesliga.json';
+  final String _tsserieaUrl = baseURL + '/json/tsseriea.json';
+  final String _tsligue1Url = baseURL + '/json/tsligue1.json';
+
   Future _todayFix;
   Future _upComingFix;
   Future _epl;
