@@ -45,8 +45,8 @@ class _FixtureCardState extends State<FixtureCard> {
                         placeholder: 'images/team-badge.png',
                         image: widget.crestTeamA,
                         imageSemanticLabel: 'Team Crest',
-                        width: 32.0,
-                        height: 32.0,
+                        width: 24.0,
+                        height: 24.0,
                       ),
                       Text(
                         widget.teamA,
@@ -101,8 +101,8 @@ class _FixtureCardState extends State<FixtureCard> {
                         placeholder: 'images/team-badge.png',
                         image: widget.crestTeamB,
                         imageSemanticLabel: 'Team Crest',
-                        width: 32.0,
-                        height: 32.0,
+                        width: 24.0,
+                        height: 24.0,
                       ),
                       Text(
                         widget.teamB,

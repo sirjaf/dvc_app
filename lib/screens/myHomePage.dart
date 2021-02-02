@@ -127,9 +127,6 @@ class _MyHomePageState extends State<MyHomePage> {
           //controller: tabController,
           tabs: [
             Tab(
-                // child: Text(
-                //   "Today",
-                // ),
                 text: "Today",
                 icon: Image.asset(
                   'images/today.png',
@@ -140,9 +137,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 iconMargin: EdgeInsets.only(bottom: 10.0)),
             Tab(
-                // child: Text(
-                //   "Upcoming",
-                // ),
                 text: "Upcoming",
                 icon: Image.asset(
                   'images/upcoming.png',
@@ -153,26 +147,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 iconMargin: EdgeInsets.only(bottom: 10.0)),
             Tab(
-                // child: Text(
-                //   "Table",
-                // ),
                 text: "Table",
                 icon: Image.asset(
                   'images/table.png',
-                  //width: cWidth / 4,
                   width: 24.0,
                   semanticLabel: 'Table Ranking',
                   fit: BoxFit.cover,
                 ),
                 iconMargin: EdgeInsets.only(bottom: 10.0)),
             Tab(
-                // child: Text(
-                //   "Top Scorers",
-                // ),
                 text: "Scorers",
                 icon: Image.asset(
                   'images/top-scorer.png',
-                  //width: cWidth / 4,
                   width: 24.0,
                   semanticLabel: 'Todays Fixture',
                   fit: BoxFit.cover,
