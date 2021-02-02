@@ -94,8 +94,6 @@ class _TopScorerUIState extends State<TopScorerUI>
                     isSelected: _selections,
                     onPressed: (int index) {
                       setState(() => {
-                            // _selections[index] = !_selections[index]
-
                             for (var i = 0; i < _selections.length; i++)
                               {
                                 if (i != index) {_selections[i] = false}

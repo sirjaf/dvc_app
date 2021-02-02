@@ -100,8 +100,6 @@ class _StatState extends State<Stat> with AutomaticKeepAliveClientMixin<Stat> {
                     isSelected: _selections,
                     onPressed: (int index) {
                       setState(() => {
-                            // _selections[index] = !_selections[index]
-
                             for (var i = 0; i < _selections.length; i++)
                               {
                                 if (i != index) {_selections[i] = false}
@@ -202,9 +200,6 @@ class _StatState extends State<Stat> with AutomaticKeepAliveClientMixin<Stat> {
                                             ],
                                             rows: [
                                               ...loadRows(snapshot, context)
-                                              // DataRow(cells: [
-                                              //   DataCell(Text('')),
-                                              // ])
                                             ],
                                           ),
                                         ),
@@ -243,8 +238,8 @@ class _StatState extends State<Stat> with AutomaticKeepAliveClientMixin<Stat> {
               fit: BoxFit.cover,
             ),
             semanticsLabel: 'Team Crest',
-            height: 50.0,
-            width: 50.0,
+            height: 32.0,
+            width: 32.0,
           ),
         )),
         DataCell(Container(

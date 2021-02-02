@@ -40,6 +40,7 @@ class _UpComingState extends State<UpComing>
 
               if (!snapshot.hasData)
                 return Center(child: CircularProgressIndicator());
+
               int itemCount = snapshot.data.length;
 
               if (itemCount == 0) {
@@ -50,8 +51,8 @@ class _UpComingState extends State<UpComing>
                   ),
                 );
               }
+
               return Container(
-                //padding: const EdgeInsets.only(top: 10),
                 child: ListView.separated(
                   itemCount: snapshot.data.length,
                   itemBuilder: (BuildContext context, int index) {
