@@ -227,21 +227,21 @@ class _StatState extends State<Stat> with AutomaticKeepAliveClientMixin<Stat> {
               style: TextStyle(fontSize: 12, fontWeight: FontWeight.normal),
             ))),
         DataCell(Center(
-          child: SvgPicture.network(
-            snapshot.data[i].crestUrl.toString(),
-            // placeholderBuilder: (context) => CircularProgressIndicator(),
-            placeholderBuilder: (context) => Image.asset(
-              'images/team-badge.png',
-              //width: cWidth / 4,
-              width: 16.0,
-              semanticLabel: 'Todays Fixture',
-              fit: BoxFit.cover,
+            child: SvgPicture.network(
+              snapshot.data[i].crestUrl.toString(),
+              // placeholderBuilder: (context) => CircularProgressIndicator(),
+              placeholderBuilder: (context) => Image.asset(
+                'images/team-badge.png',
+                //width: cWidth / 4,
+                width: 16.0,
+                semanticLabel: 'Todays Fixture',
+                fit: BoxFit.cover,
+              ),
+              semanticsLabel: 'Team Crest',
+              height: 32.0,
+              width: 32.0,
             ),
-            semanticsLabel: 'Team Crest',
-            height: 32.0,
-            width: 32.0,
-          ),
-        )),
+            )),
         DataCell(Container(
           child: Text(snapshot.data[i].name,
               textAlign: TextAlign.left,
