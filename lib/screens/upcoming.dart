@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:dvcapp/widgets/fixtureCard.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -54,6 +56,7 @@ class _UpComingState extends State<UpComing>
 
               return Container(
                 child: ListView.separated(
+                  key: new Key(Random(1).toString()),
                   itemCount: snapshot.data.length,
                   itemBuilder: (BuildContext context, int index) {
                     if ((myDate == null) ||
